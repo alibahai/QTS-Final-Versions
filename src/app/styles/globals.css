@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Default font for body (Manrope, weight 300) */
+body {
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 300;
+}
+
+/* Paragraphs use Poppins */
+p {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+}

@@ -1,0 +1,72 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import LeftServicesRail from "../rails/LeftServicesRail";
+import RightContactRail from "../rails/RightContactRail";
+
+export default function HeroVideo() {
+  const VIDEO_SRC =
+    "https://res.cloudinary.com/dyckgorsz/video/upload/v1759921866/QTS_a9pvzw.mp4";
+  const POSTER_SRC = "/images/2ndImage.jpg";
+
+  const videoRef = useRef(null);
+  const [ready, setReady] = useState(false); // page fully loaded?
+
+  useEffect(() => {
+    const onLoaded = () => setReady(true);
+
+    if (document.readyState === "complete") {
+      setReady(true);
+    } else {
+      window.addEventListener("load", onLoaded, { once: true });
+      return () => window.removeEventListener("load", onLoaded);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (ready && videoRef.current) {
+      // try to play once source is present
+      const v = videoRef.current;
+      // small defer to let <source> attach
+      const id = requestAnimationFrame(() => {
+        v.play().catch(() => {});
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [ready]);
+
+  return (
+    // 👇 id same rehne do
+    <section
+      id="hero"
+      className="relative min-h-screen w-full overflow-hidden -mt-20"
+    >
+      <video
+        ref={videoRef}
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        poster={POSTER_SRC}
+        preload="none" // 👉 don't prefetch
+        autoPlay // autoplay allowed (muted + playsInline)
+        muted
+        playsInline
+        loop
+        aria-hidden="true"
+      >
+        {/* Source sirf tab add hoga jab pura page load ho chuka ho */}
+        {ready && <source src={VIDEO_SRC} type="video/mp4" />}
+      </video>
+
+      {/* dark tint over the video */}
+      <div className="absolute inset-0 " />
+
+      {/* Navbar sits on top */}
+      <div className="relative z-20">{/* Navbar slot */}</div>
+
+      {/* Rails (flush edges) */}
+      <LeftServicesRail />
+      <RightContactRail phone="+971 56 806 8070" />
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
+    </section>
+  );
+}
