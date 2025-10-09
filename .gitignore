@@ -46,7 +46,7 @@ public/videos/*.mp4
 
 
 # Large assets
-public/images/*
-!public/images/favicon.ico
-!public/images/logo.png
+# public/images/*
+# !public/images/favicon.ico
+# !public/images/logo.png
 
