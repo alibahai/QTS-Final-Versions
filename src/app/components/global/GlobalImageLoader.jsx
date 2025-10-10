@@ -7,16 +7,16 @@ export default function GlobalImageLoader() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Add spinner CSS once
-    let styleTag = document.getElementById("__img-spinner-style__");
+    // Inject spinner CSS once
+    let styleTag = document.getElementById("__media-spinner-style__");
     if (!styleTag) {
       styleTag = document.createElement("style");
-      styleTag.id = "__img-spinner-style__";
+      styleTag.id = "__media-spinner-style__";
       styleTag.textContent = `
         @keyframes __spin {
           to { transform: rotate(360deg); }
         }
-        .__img-loader-overlay__ {
+        .__media-loader-overlay__ {
           position: absolute;
           inset: 0;
           display: flex;
@@ -26,7 +26,7 @@ export default function GlobalImageLoader() {
           backdrop-filter: blur(2px);
           pointer-events: none;
         }
-        .__img-loader-spinner__ {
+        .__media-loader-spinner__ {
           height: 20px;
           width: 20px;
           border: 2px solid rgba(255,255,255,0.3);
@@ -40,66 +40,88 @@ export default function GlobalImageLoader() {
 
     const processed = new WeakSet();
 
-    const addOverlay = (img) => {
-      if (processed.has(img)) return;
-      processed.add(img);
+    const addOverlay = (el) => {
+      if (processed.has(el)) return;
+      processed.add(el);
 
       const host =
-        img.parentElement?.style?.position === "relative"
-          ? img.parentElement
-          : img.parentElement;
+        el.parentElement?.style?.position === "relative"
+          ? el.parentElement
+          : el.parentElement;
 
       if (!host) return;
-
-      if (host.querySelector(":scope > .__img-loader-overlay__")) return;
+      if (host.querySelector(":scope > .__media-loader-overlay__")) return;
 
       const overlay = document.createElement("div");
-      overlay.className = "__img-loader-overlay__";
+      overlay.className = "__media-loader-overlay__";
 
-      const br = getComputedStyle(img).borderRadius;
+      const br = getComputedStyle(el).borderRadius;
       if (br && br !== "0px") overlay.style.borderRadius = br;
 
       const spinner = document.createElement("div");
-      spinner.className = "__img-loader-spinner__";
+      spinner.className = "__media-loader-spinner__";
       overlay.appendChild(spinner);
 
       const hostStyle = getComputedStyle(host);
-      if (hostStyle.position === "static") {
-        host.style.position = "relative";
-      }
+      if (hostStyle.position === "static") host.style.position = "relative";
 
       host.appendChild(overlay);
 
       const remove = () => {
         overlay.remove();
-        img.removeEventListener("load", remove);
-        img.removeEventListener("error", remove);
+        el.removeEventListener("load", remove);
+        el.removeEventListener("error", remove);
+        el.removeEventListener("loadeddata", remove);
+        el.removeEventListener("canplaythrough", remove);
       };
 
-      if (img.complete) {
-        remove();
-      } else {
-        img.addEventListener("load", remove, { once: true });
-        img.addEventListener("error", remove, { once: true });
+      // Detect whether it's <img> or <video>
+      if (el.tagName === "IMG") {
+        if (el.complete) {
+          remove();
+        } else {
+          el.addEventListener("load", remove, { once: true });
+          el.addEventListener("error", remove, { once: true });
+        }
+      } else if (el.tagName === "VIDEO") {
+        if (el.readyState >= 3) {
+          // already can play
+          remove();
+        } else {
+          el.addEventListener("loadeddata", remove, { once: true });
+          el.addEventListener("canplaythrough", remove, { once: true });
+          el.addEventListener("error", remove, { once: true });
+        }
       }
     };
 
-    const scanAllImages = () => {
+    const scanAllMedia = () => {
+      // Images
       document.querySelectorAll("img").forEach((img) => {
         if (!img.complete || img.currentSrc === "") addOverlay(img);
+      });
+
+      // Videos
+      document.querySelectorAll("video").forEach((video) => {
+        if (video.readyState < 3) addOverlay(video);
       });
     };
 
     // Initial scan
-    scanAllImages();
+    scanAllMedia();
 
-    // Watch for dynamically added images
+    // Watch dynamically added images or videos
     const mo = new MutationObserver((mutations) => {
       for (const m of mutations) {
         m.addedNodes.forEach((node) => {
           if (!(node instanceof Element)) return;
-          if (node.tagName === "IMG") addOverlay(node);
-          node.querySelectorAll?.("img").forEach((img) => addOverlay(img));
+
+          if (node.tagName === "IMG" || node.tagName === "VIDEO") {
+            addOverlay(node);
+          }
+          node
+            .querySelectorAll?.("img, video")
+            .forEach((el) => addOverlay(el));
         });
       }
     });
@@ -107,7 +129,7 @@ export default function GlobalImageLoader() {
     mo.observe(document.body, { childList: true, subtree: true });
 
     // Re-scan when route changes
-    scanAllImages();
+    scanAllMedia();
 
     return () => {
       mo.disconnect();
