@@ -62,24 +62,33 @@ const IconBuilding = (p) => (
   </svg>
 );
 
-
 const Resid = (p) => (
-
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 15 15">
-		<path fill="currentColor" d="M14 6H1a11.4 11.4 0 0 1 1-4h11a11.4 11.4 0 0 1 1 4M3 7h9v6h-1V8H8v5H3zm1 3h3V8H4z" />
-	</svg>
-
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36"
+    height="24"
+    viewBox="0 0 15 15"
+  >
+    <path
+      fill="currentColor"
+      d="M14 6H1a11.4 11.4 0 0 1 1-4h11a11.4 11.4 0 0 1 1 4M3 7h9v6h-1V8H8v5H3zm1 3h3V8H4z"
+    />
+  </svg>
 );
 
 const Comm = (p) => (
-
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 15 15">
-		<path fill="currentColor" d="M11.8 12.5V10c.7-.1 1.2-.7 1.2-1.5S12.3 7 11.5 7S10 7.7 10 8.5c0 .7.5 1.4 1.2 1.5v2.5H7V1H2v11.5H1v.5h13v-.5zM6 10H3V9h3zm0-2H3V7h3zm0-2H3V5h3zm0-2H3V3h3z" />
-	</svg>
-
-
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36"
+    height="24"
+    viewBox="0 0 15 15"
+  >
+    <path
+      fill="currentColor"
+      d="M11.8 12.5V10c.7-.1 1.2-.7 1.2-1.5S12.3 7 11.5 7S10 7.7 10 8.5c0 .7.5 1.4 1.2 1.5v2.5H7V1H2v11.5H1v.5h13v-.5zM6 10H3V9h3zm0-2H3V7h3zm0-2H3V5h3zm0-2H3V3h3z"
+    />
+  </svg>
 );
-
 
 /* ================= DATA ================= */
 const SERVICES = [
@@ -117,40 +126,38 @@ const SUPPORT_CATEGORIES = [
 const COMMERCIAL_PROJECTS = [
   { title: "Arabian Oud", href: "/our-project/arabian-oud" },
   { title: "Galaxy Hockey", href: "/our-project/galaxy-hockey" },
-  { title: "Jarge",  href: "/our-project/jorgee" },
+  { title: "Jarge", href: "/our-project/jorgee" },
   { title: "Ayur Care", href: "/our-project/ayur-care" },
-  { title: "Hareer",  href: "/our-project/hareer" },
-  { title: "Professor",  href: "/our-project/professor" },
-  { title: "Fitn Glam",  href: "/our-project/fitnglam" },
-  { title: "Tous Les Jours",  href: "/our-project/tous-les-jours" },
-  { title: "Adore",  href: "/our-project/adore" },
-  { title: "Turkish Icecreeam",  href: "/our-project/turkish-icecream" },
-  { title: "Bianco",  href: "/our-project/bianco" },
-  { title: "Cold Station",  href: "/our-project/coldstation" },
-  { title: "Creep & Go",  href: "/our-project/creep&go" },
-  { title: "Exibition",  href: "/our-project/exibition" },
-  { title: "Mania",  href: "/our-project/mania" },
-  { title: "Maria Fashion",  href: "/our-project/maria-fashion" },
-  { title: "Senso Shop",  href: "/our-project/senso-shop" },
-  { title: "Toyo Station",  href: "/our-project/toyo-station" },
-
+  { title: "Hareer", href: "/our-project/hareer" },
+  { title: "Professor", href: "/our-project/professor" },
+  { title: "Fitn Glam", href: "/our-project/fitnglam" },
+  { title: "Tous Les Jours", href: "/our-project/tous-les-jours" },
+  { title: "Adore", href: "/our-project/adore" },
+  { title: "Turkish Icecreeam", href: "/our-project/turkish-icecream" },
+  { title: "Bianco", href: "/our-project/bianco" },
+  { title: "Cold Station", href: "/our-project/coldstation" },
+  { title: "Creep & Go", href: "/our-project/creep&go" },
+  { title: "Exibition", href: "/our-project/exibition" },
+  { title: "Mania", href: "/our-project/mania" },
+  { title: "Maria Fashion", href: "/our-project/maria-fashion" },
+  { title: "Senso Shop", href: "/our-project/senso-shop" },
+  { title: "Toyo Station", href: "/our-project/toyo-station" },
 ];
 
 const RESIDENTIAL_PROJECTS = [
-  { title: "Hashim Villa",  href: "/our-project/hashim-villa" },
-  { title: "Sufoh Villa",  href: "/our-project/sufoh-villa" },
-  { title: "Peach Passion",  href: "/our-project/peach-passion" },
-  { title: "Wafi Mall",  href: "/our-project/wafi-mall" },
-  { title: "Gym",  href: "/our-project/gym" },
-  { title: "Barsha Mall",  href: "/our-project/barsha-mall" },
-  { title: "Bungalaw Mall",  href: "/our-project/bungalaw-mall" },
-  { title: "Courtyard Mall",  href: "/our-project/courtyard-mall" },
-  { title: "Deeny",  href: "/our-project/deeny" },
-  { title: "Jumeriah Road",  href: "/our-project/jumeriah-road" },
-  { title: "Maliha Road ",  href: "/our-project/maliha-road " },
-  { title: "Senso City",  href: "/our-project/senso-city" },
-  { title: "Senso Outlet",  href: "/our-project/senso-outlet" },
-
+  { title: "Hashim Villa", href: "/our-project/hashim-villa" },
+  { title: "Sufoh Villa", href: "/our-project/sufoh-villa" },
+  { title: "Peach Passion", href: "/our-project/peach-passion" },
+  { title: "Wafi Mall", href: "/our-project/wafi-mall" },
+  { title: "Gym", href: "/our-project/gym" },
+  { title: "Barsha Mall", href: "/our-project/barsha-mall" },
+  { title: "Bungalaw Mall", href: "/our-project/bungalaw-mall" },
+  { title: "Courtyard Mall", href: "/our-project/courtyard-mall" },
+  { title: "Deeny", href: "/our-project/deeny" },
+  { title: "Jumeriah Road", href: "/our-project/jumeriah-road" },
+  { title: "Maliha Road ", href: "/our-project/maliha-road " },
+  { title: "Senso City", href: "/our-project/senso-city" },
+  { title: "Senso Outlet", href: "/our-project/senso-outlet" },
 ];
 
 export default function Navbar({
@@ -273,7 +280,7 @@ export default function Navbar({
               className="group flex items-center gap-3 rounded-xl p-2.5 hover:bg-red-600"
               onClick={() => setOpenMenu("none")}
             >
-{Icon && <Icon className="h-6 w-6" />}
+              {Icon && <Icon className="h-6 w-6" />}
               <span className="text-sm font-medium leading-snug">{title}</span>
             </Link>
           ))}
@@ -300,7 +307,9 @@ export default function Navbar({
         role="menu"
         aria-label={id}
         className={`${
-          open ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          open
+            ? "opacity-100 scale-100"
+            : "opacity-0 scale-95 pointer-events-none"
         } absolute left-1/2 top-full -translate-x-1/2 mt-4 z-[60] w-[720px]
            rounded-2xl bg-gray-800 text-white shadow-2xl transition duration-150 origin-top`}
         onMouseEnter={clearCloseTimer}
@@ -309,71 +318,75 @@ export default function Navbar({
         <div className="p-4 sm:p-5">
           {/* Row of two category tabs */}
           <div className="grid grid-cols-2 gap-3">
-  {SUPPORT_CATEGORIES.map(({ key, title, Icon }, i) => (
-    <button
-      key={i}
-      type="button"
-      onMouseEnter={() => setHoveredSupportKey(key)}
-      className={`group flex items-center gap-3 rounded-xl p-3 text-left transition-colors duration-200 
+            {SUPPORT_CATEGORIES.map(({ key, title, Icon }, i) => (
+              <button
+                key={i}
+                type="button"
+                onMouseEnter={() => setHoveredSupportKey(key)}
+                className={`group flex items-center gap-3 rounded-xl p-3 text-left transition-colors duration-200 
                   ${
                     hoveredSupportKey === key
-                      ? "bg-red-600"              // 🔴 stays red when active
-                      : "hover:bg-red-600/70"     // 🔴 light red on hover
+                      ? "bg-red-600" // 🔴 stays red when active
+                      : "hover:bg-red-600/70" // 🔴 light red on hover
                   }`}
-    >
-      <Icon className="h-6 w-6" />
-      <span className="text-sm font-semibold leading-snug">{title}</span>
-    </button>
-  ))}
-</div>
-
+              >
+                <Icon className="h-6 w-6" />
+                <span className="text-sm font-semibold leading-snug">
+                  {title}
+                </span>
+              </button>
+            ))}
+          </div>
 
           {/* Projects panel appears directly UNDER the categories */}
-       {/* Projects panel appears directly UNDER the categories */}
-{active ? (
-  <div className="mt-4 border-t border-white/10 pt-4">
-    {/* ✅ Scrollable container for desktop */}
-    <div className="hidden lg:block max-h-[220px] overflow-y-auto pr-1">
-      <div className="grid grid-cols-2 gap-x-8 gap-y-3">
-        {active.map(({ title, Icon, href }, idx) => (
-          <Link
-            key={idx}
-            href={href}
-            role="menuitem"
-            className="group flex items-center gap-3 rounded-xl p-2.5 hover:bg-red-600"
-            onClick={() => {
-              setOpenMenu("none");
-              setHoveredSupportKey(null);
-            }}
-          >
-{Icon && <Icon className="h-6 w-6" />}
-            <span className="text-sm font-medium leading-snug">{title}</span>
-          </Link>
-        ))}
-      </div>
-    </div>
+          {/* Projects panel appears directly UNDER the categories */}
+          {active ? (
+            <div className="mt-4 border-t border-white/10 pt-4">
+              {/* ✅ Scrollable container for desktop */}
+              <div className="hidden lg:block max-h-[220px] overflow-y-auto pr-1">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+                  {active.map(({ title, Icon, href }, idx) => (
+                    <Link
+                      key={idx}
+                      href={href}
+                      role="menuitem"
+                      className="group flex items-center gap-3 rounded-xl p-2.5 hover:bg-red-600"
+                      onClick={() => {
+                        setOpenMenu("none");
+                        setHoveredSupportKey(null);
+                      }}
+                    >
+                      {Icon && <Icon className="h-6 w-6" />}
+                      <span className="text-sm font-medium leading-snug">
+                        {title}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
 
-    {/* Mobile: normal list, no scroll limit */}
-    <div className="lg:hidden grid grid-cols-2 gap-x-8 gap-y-3">
-      {active.map(({ title, Icon, href }, idx) => (
-        <Link
-          key={idx}
-          href={href}
-          role="menuitem"
-          className="group flex items-center gap-3 rounded-xl p-2.5 hover:bg-red-600"
-          onClick={() => {
-            setOpenMenu("none");
-            setHoveredSupportKey(null);
-          }}
-        >
-{Icon && <Icon className="h-6 w-6" />}
-          <span className="text-sm font-medium leading-snug">{title}</span>
-        </Link>
-      ))}
-    </div>
-  </div>
-) : null}
-
+              {/* Mobile: normal list, no scroll limit */}
+              <div className="lg:hidden grid grid-cols-2 gap-x-8 gap-y-3">
+                {active.map(({ title, Icon, href }, idx) => (
+                  <Link
+                    key={idx}
+                    href={href}
+                    role="menuitem"
+                    className="group flex items-center gap-3 rounded-xl p-2.5 hover:bg-red-600"
+                    onClick={() => {
+                      setOpenMenu("none");
+                      setHoveredSupportKey(null);
+                    }}
+                  >
+                    {Icon && <Icon className="h-6 w-6" />}
+                    <span className="text-sm font-medium leading-snug">
+                      {title}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     );
@@ -492,7 +505,10 @@ export default function Navbar({
                 </svg>
               </button>
 
-              <SupportDropdown id="support-menu" open={openMenu === "support"} />
+              <SupportDropdown
+                id="support-menu"
+                open={openMenu === "support"}
+              />
             </li>
 
             <li>
@@ -648,7 +664,7 @@ export default function Navbar({
                       onClick={() => setOpen(false)}
                       className="group flex items-center gap-3 rounded-lg p-2.5 hover:bg-red-600"
                     >
-{Icon && <Icon className="h-6 w-6" />}
+                      {Icon && <Icon className="h-6 w-6" />}
                       <span className="text-sm font-medium">{title}</span>
                     </Link>
                   ))}
@@ -656,123 +672,129 @@ export default function Navbar({
               </div>
             </li>
 
-      {/* Our Projects (MOBILE) */}
-<li>
-  <button
-    type="button"
-    onClick={() => setMSupport((v) => !v)}
-    className="w-full flex items-center justify-between text-base font-medium hover:text-white/80"
-    aria-expanded={mSupport}
-    aria-controls="m-support"
-  >
-    <span>Our Projects</span>
-    <svg
-      aria-hidden="true"
-      className={`h-4 w-4 transition-transform ${
-        mSupport ? "rotate-180" : ""
-      }`}
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
-    </svg>
-  </button>
+            {/* Our Projects (MOBILE) */}
+            <li>
+              <button
+                type="button"
+                onClick={() => setMSupport((v) => !v)}
+                className="w-full flex items-center justify-between text-base font-medium hover:text-white/80"
+                aria-expanded={mSupport}
+                aria-controls="m-support"
+              >
+                <span>Our Projects</span>
+                <svg
+                  aria-hidden="true"
+                  className={`h-4 w-4 transition-transform ${
+                    mSupport ? "rotate-180" : ""
+                  }`}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
+                </svg>
+              </button>
 
-  <div
-    id="m-support"
-    className={`overflow-hidden transition-all duration-200 ${
-      mSupport ? "max-h-[1000px] mt-3" : "max-h-0"
-    }`}
-  >
-    {/* Commercials */}
-    <div className="mb-2">
-      <button
-        type="button"
-        onClick={() =>
-          setHoveredSupportKey(
-            hoveredSupportKey === "commercial" ? null : "commercial"
-          )
-        }
-        className="w-full flex items-center justify-between text-sm font-medium p-2 rounded-lg hover:bg-red-600"
-      >
-        <span>Commercials</span>
-        <svg
-          aria-hidden="true"
-          className={`h-3.5 w-3.5 transition-transform ${
-            hoveredSupportKey === "commercial" ? "rotate-180" : ""
-          }`}
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
-        </svg>
-      </button>
-      <div
-        className={`overflow-hidden transition-all duration-200 ${
-          hoveredSupportKey === "commercial" ? "max-h-[1000px] mt-2" : "max-h-0"
-        }`}
-      >
-        <div className="grid grid-cols-1 gap-2">
-          {COMMERCIAL_PROJECTS.map(({ title, Icon, href }, i) => (
-            <Link
-              key={i}
-              href={href}
-              onClick={() => setOpen(false)}
-              className="group flex items-center gap-3 rounded-lg p-2.5 hover:bg-red-600"
-            >
-{Icon && <Icon className="h-6 w-6" />}
-              <span className="text-sm font-medium">{title}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
+              <div
+                id="m-support"
+                className={`overflow-hidden transition-all duration-200 ${
+                  mSupport ? "max-h-[1000px] mt-3" : "max-h-0"
+                }`}
+              >
+                {/* Commercials */}
+                <div className="mb-2">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setHoveredSupportKey(
+                        hoveredSupportKey === "commercial" ? null : "commercial"
+                      )
+                    }
+                    className="w-full flex items-center justify-between text-sm font-medium p-2 rounded-lg hover:bg-red-600"
+                  >
+                    <span>Commercials</span>
+                    <svg
+                      aria-hidden="true"
+                      className={`h-3.5 w-3.5 transition-transform ${
+                        hoveredSupportKey === "commercial" ? "rotate-180" : ""
+                      }`}
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-200 ${
+                      hoveredSupportKey === "commercial"
+                        ? "max-h-[1000px] mt-2"
+                        : "max-h-0"
+                    }`}
+                  >
+                    <div className="grid grid-cols-1 gap-2">
+                      {COMMERCIAL_PROJECTS.map(({ title, Icon, href }, i) => (
+                        <Link
+                          key={i}
+                          href={href}
+                          onClick={() => setOpen(false)}
+                          className="group flex items-center gap-3 rounded-lg p-2.5 hover:bg-red-600"
+                        >
+                          {Icon && <Icon className="h-6 w-6" />}
+                          <span className="text-sm font-medium">{title}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
 
-    {/* Residentials */}
-    <div>
-      <button
-        type="button"
-        onClick={() =>
-          setHoveredSupportKey(
-            hoveredSupportKey === "residential" ? null : "residential"
-          )
-        }
-        className="w-full flex items-center justify-between text-sm font-medium p-2 rounded-lg hover:bg-red-600"
-      >
-        <span>Residentials</span>
-        <svg
-          aria-hidden="true"
-          className={`h-3.5 w-3.5 transition-transform ${
-            hoveredSupportKey === "residential" ? "rotate-180" : ""
-          }`}
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
-        </svg>
-      </button>
-      <div
-        className={`overflow-hidden transition-all duration-200 ${
-          hoveredSupportKey === "residential" ? "max-h-[1000px] mt-2" : "max-h-0"
-        }`}
-      >
-        <div className="grid grid-cols-1 gap-2">
-          {RESIDENTIAL_PROJECTS.map(({ title, Icon, href }, i) => (
-            <Link
-              key={i}
-              href={href}
-              onClick={() => setOpen(false)}
-              className="group flex items-center gap-3 rounded-lg p-2.5 hover:bg-red-600"
-            >
-{Icon && <Icon className="h-6 w-6" />}
-              <span className="text-sm font-medium">{title}</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</li>
+                {/* Residentials */}
+                <div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setHoveredSupportKey(
+                        hoveredSupportKey === "residential"
+                          ? null
+                          : "residential"
+                      )
+                    }
+                    className="w-full flex items-center justify-between text-sm font-medium p-2 rounded-lg hover:bg-red-600"
+                  >
+                    <span>Residentials</span>
+                    <svg
+                      aria-hidden="true"
+                      className={`h-3.5 w-3.5 transition-transform ${
+                        hoveredSupportKey === "residential" ? "rotate-180" : ""
+                      }`}
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z" />
+                    </svg>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-all duration-200 ${
+                      hoveredSupportKey === "residential"
+                        ? "max-h-[1000px] mt-2"
+                        : "max-h-0"
+                    }`}
+                  >
+                    <div className="grid grid-cols-1 gap-2">
+                      {RESIDENTIAL_PROJECTS.map(({ title, Icon, href }, i) => (
+                        <Link
+                          key={i}
+                          href={href}
+                          onClick={() => setOpen(false)}
+                          className="group flex items-center gap-3 rounded-lg p-2.5 hover:bg-red-600"
+                        >
+                          {Icon && <Icon className="h-6 w-6" />}
+                          <span className="text-sm font-medium">{title}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
 
             {/* About */}
             <li>
@@ -788,7 +810,7 @@ export default function Navbar({
             {/* Contact */}
             <li>
               <Link
-                href="/Contact"
+                href="/contact"
                 onClick={() => setOpen(false)}
                 className="flex items-center justify-between text-base font-medium hover:text-white/80"
               >
