@@ -513,7 +513,7 @@ export default function Navbar({
 
             <li>
               <Link
-                href="/About"
+                href="/about"
                 className="inline-flex items-center gap-1 text-sm xl:text-base font-medium tracking-wide transition hover:text-white/80"
               >
                 About Us
