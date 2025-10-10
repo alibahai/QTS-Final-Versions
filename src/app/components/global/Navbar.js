@@ -142,12 +142,7 @@ const COMMERCIAL_PROJECTS = [
   { title: "Maria Fashion", href: "/our-project/maria-fashion" },
   { title: "Senso Shop", href: "/our-project/senso-shop" },
   { title: "Toyo Station", href: "/our-project/toyo-station" },
-];
-
-const RESIDENTIAL_PROJECTS = [
-  { title: "Hashim Villa", href: "/our-project/hashim-villa" },
-  { title: "Sufoh Villa", href: "/our-project/sufoh-villa" },
-  { title: "Peach Passion", href: "/our-project/peach-passion" },
+ { title: "Peach Passion", href: "/our-project/peach-passion" },
   { title: "Wafi Mall", href: "/our-project/wafi-mall" },
   { title: "Gym", href: "/our-project/gym" },
   { title: "Barsha Mall", href: "/our-project/barsha-mall" },
@@ -158,6 +153,14 @@ const RESIDENTIAL_PROJECTS = [
   { title: "Maliha Road ", href: "/our-project/maliha-road " },
   { title: "Senso City", href: "/our-project/senso-city" },
   { title: "Senso Outlet", href: "/our-project/senso-outlet" },
+
+
+];
+
+const RESIDENTIAL_PROJECTS = [
+  { title: "Hashim Villa", href: "/our-project/hashim-villa" },
+  { title: "Sufoh Villa", href: "/our-project/sufoh-villa" },
+ 
 ];
 
 export default function Navbar({

@@ -69,7 +69,7 @@ const IconBarcode = (p) => (
 );
 
 const IconBuilding = (p) => (
-  <svg viewBox="0 0 24 24" fill="none" {...p}>
+  <svg viewBox="0 0 24 24"  fill="none" {...p}>
     <path
       d="M4 20h16M6 20V8h12v12M10 12h4"
       stroke="currentColor"
@@ -101,22 +101,23 @@ export default function LeftServicesRail({ menuOpen }) {
               href={href}
               aria-label={title}
               className="
-                group flex h-10 w-[360px] md:w-[450px] items-center overflow-hidden
+                group flex h-10 w-[360px] md:w-[590px] items-center overflow-hidden
                 bg-transparent hover:bg-red-600 transition-colors duration-200
                 rounded-r-md rounded-l-none
                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
               "
             >
               {/* Icon */}
-              <span className="pl-2 pr-2 flex h-full items-center">
-                <Icon className="h-5 w-5 text-gray-200 group-hover:text-white" />
-              </span>
+          <span className="pl-2 pr-2 flex h-full items-center">
+  <Icon className="h-5 w-5 md:h-7 md:w-7 text-gray-200 group-hover:text-white" />
+</span>
+
 
               {/* Label: sm on mobile, lg on desktop */}
               <span
                 className={`
                   inline-flex h-full items-center 
-                  text-sm md:text-lg font-bold leading-none
+                  text-sm md:text-2xl font-bold leading-none
                   whitespace-nowrap text-gray-200 group-hover:text-white
                   transition-all duration-200
                   ${menuOpen ? "hidden" : "inline-flex"}

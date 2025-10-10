@@ -162,8 +162,8 @@ export default function Footer({ year }) {
                   priority
                 />
               </div>
-              <p className="text-sm leading-6 text-white/80">
-                Quality Team Solution (QTS) is Dubai’s leading interior design
+              <p className="text-sm leading-6 text-white/80 text-justify">
+                Quality-Team-Solution (QTS) is Dubai’s leading interior design
                 and fit-out partner, known for turning ideas into exceptional
                 spaces. We deliver innovative, functional, and timeless designs
                 — serving clients across the UAE and beyond.
@@ -307,9 +307,11 @@ export default function Footer({ year }) {
                 <a
                   href="https://www.linkedin.com/company/quality-team-solutions/about/"
                   target="_blank"
+                  className="inline-flex items-center justify-center w-10  bg-white rounded-full"
                 >
                   <Icon icon="logos:linkedin-icon" width="30" height="30" />
                 </a>
+
                 <a
                   href="https://www.snapchat.com/@qualityteamsol0"
                   target="_blank"
@@ -321,6 +323,8 @@ export default function Footer({ year }) {
                 <a
                   href="https://www.tiktok.com/@qualityteamsolution"
                   target="_blank"
+                                    // className="inline-flex items-center justify-center w-10  bg-white rounded-full"
+
                 >
                   <Icon icon="logos:tiktok-icon" width="30" height="30" />
                 </a>
@@ -330,33 +334,32 @@ export default function Footer({ year }) {
         </div>
 
         {/* Bottom Bar for Desktop */}
-      {/* Bottom Bar for Desktop */}
-<div className="hidden md:block border-t border-white/10">
-  <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-2">
-    <div className="flex justify-center items-center gap-2 w-full text-center mt-4 mb-4 relative bottom-2">
-      <Image
-        src="/images/0908.png"
-        alt="Intercraft Solutions Logo"
-        width={18}
-        height={18}
-        // If the logo has a WHITE background (JPG): use multiply to blend it in
-        className="object-contain mix-blend-multiply opacity-90"
-        // If your logo is a transparent PNG, 'screen' often looks nicer:
-        // className="object-contain mix-blend-screen opacity-90"
-        priority
-      />
+        {/* Bottom Bar for Desktop */}
+        <div className="hidden md:block border-t border-white/10">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-2">
+            <div className="flex justify-center items-center gap-2 w-full text-center mt-4 mb-4 relative bottom-2">
+              <Image
+                src="/images/0908.png"
+                alt="Intercraft Solutions Logo"
+                width={18}
+                height={18}
+                // If the logo has a WHITE background (JPG): use multiply to blend it in
+                className="object-contain mix-blend-multiply opacity-90"
+                // If your logo is a transparent PNG, 'screen' often looks nicer:
+                // className="object-contain mix-blend-screen opacity-90"
+                priority
+              />
 
-      <Link
-        href="https://www.intercraftsol.com"
-        target="_blank"
-        className="hover:text-white text-white/80 transition"
-      >
-        www.intercraftsol.com
-      </Link>
-    </div>
-  </div>
-</div>
-
+              <Link
+                href="https://www.intercraftsol.com"
+                target="_blank"
+                className="hover:text-white text-white/80 transition"
+              >
+                www.intercraftsol.com
+              </Link>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
