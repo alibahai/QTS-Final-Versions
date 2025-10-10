@@ -836,7 +836,7 @@ export default function Navbar({
           {/* CTA */}
           <div className="mt-8">
             <Link
-              href="/Contact"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="block w-full text-center rounded-md bg-red-600 py-3 text-white font-semibold shadow hover:opacity-95 active:opacity-90"
             >
