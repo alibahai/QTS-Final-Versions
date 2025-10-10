@@ -497,7 +497,7 @@ export default function Navbar({
 
             <li>
               <Link
-                href="/about"
+                href="/About"
                 className="inline-flex items-center gap-1 text-sm xl:text-base font-medium tracking-wide transition hover:text-white/80"
               >
                 About Us
@@ -507,7 +507,7 @@ export default function Navbar({
             {/* Contact Us simple button */}
             <li>
               <Link
-                href="/contact"
+                href="/Contact"
                 className="px-4 py-2 bg-red-600 rounded-md text-white font-medium"
               >
                 Contact Us
