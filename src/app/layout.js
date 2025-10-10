@@ -2,8 +2,8 @@ import { Manrope, Poppins } from "next/font/google";
 
 import Footer from "./components/global/Footer";
 import Navbar from "./components/global/Navbar";
-import RightContactRailGlobal from "../app/components/rails/RightContactRail"; // ⬅️ add this
-import PageLoader from "./components/global/PageLoader"; // ⬅️ add this
+import RightContactRailGlobal from "./components/rails/RightContactRail";
+import GlobalImageLoader from "./components/global/GlobalImageLoader"; // ✅
 
 import "./styles/globals.css";
 
@@ -30,12 +30,10 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${manrope.variable} ${poppins.variable}`}>
-        <body>
-        <PageLoader /> {/* ⬅️ shows until all assets (incl. images) finish loading */}
-
+      <body>
+        <GlobalImageLoader /> {/* 👈 per-image spinner, global & route-aware */}
         <Navbar />
         {children}
-
         <RightContactRailGlobal
           phone="+971 56 806 8070"
           whatsappHref="https://wa.me/971568068070"
