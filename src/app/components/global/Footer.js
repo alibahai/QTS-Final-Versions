@@ -116,34 +116,60 @@ export default function Footer({ year }) {
             </form>
 
             {/* Social icons */}
-            <div className="flex justify-center gap-8 mt-8">
-              <a href="https://wa.me/971568068070" target="_blank">
-                <Icon icon="logos:whatsapp-icon" width="28" height="28" />
-              </a>
-              <a href="https://www.youtube.com" target="_blank">
-                <Icon icon="logos:youtube-icon" width="28" height="28" />
-              </a>
-              <a
-                href="https://www.instagram.com/qualityteamsolution/"
-                target="_blank"
-              >
-                <Icon icon="skill-icons:instagram" width="28" height="28" />
-              </a>
-              <a href="https://www.facebook.com" target="_blank">
-                <Icon icon="logos:facebook" width="28" height="28" />
-              </a>
-            </div>
+              <div className="flex items-center gap-10 pt-5 mt-10 mb-3  ml-28">
+                <a
+                  href="https://www.instagram.com/qualityteamsolution/"
+                  target="_blank"
+                >
+                  <Icon icon="skill-icons:instagram" width="30" height="30" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/quality-team-solutions/about/"
+                  target="_blank"
+                  className="inline-flex items-center justify-center w-8 h-8  bg-white rounded-full"
+                >
+                  <Icon icon="logos:linkedin-icon" width="40" height="40" />
+                </a>
 
+                <a
+                  href="https://www.snapchat.com/@qualityteamsol0"
+                  target="_blank"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 text-white hover:opacity-90 transition"
+                >
+                  <Icon icon="uil:snapchat-ghost" width="38" height="24" />
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@qualityteamsolution"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="QTS on TikTok"
+                  className="inline-flex items-center text-white/80 hover:text-white transition"
+                >
+                  <Icon icon="simple-icons:tiktok" width="30" height="30" />
+                </a>
+              </div>
             {/* Bottom Bar for Mobile */}
-            <div className="mt-8 border-t border-white/10 pt-3 text-sm text-white/70">
-              <p>© {year} Quality Team Solution (QTS)</p>
-              <div className="flex justify-center gap-4 mt-2">
-                <Link href="#" className="hover:text-white">
-                  Privacy Policy
-                </Link>
-                <Link href="#" className="hover:text-white">
-                  Terms & Conditions
-                </Link>
+            {/* Top strip: logo + site URL */}
+            <div className="border-t border-white/10">
+              <div className="mx-auto w-full max-w-7xl px-4 py-3">
+                <div className="flex justify-center items-center gap-2 text-center">
+                  <Image
+                    src="/images/0908.png"
+                    alt="Intercraft Solutions Logo"
+                    width={16}
+                    height={16}
+                    className="object-contain mix-blend-multiply opacity-90"
+                    priority
+                  />
+                  <Link
+                    href="https://www.intercraftsol.com"
+                    target="_blank"
+                    className="hover:text-white text-white/80 transition text-sm"
+                  >
+                    www.intercraftsol.com
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -323,17 +349,17 @@ export default function Footer({ year }) {
                 <a
                   href="https://www.tiktok.com/@qualityteamsolution"
                   target="_blank"
-                                    // className="inline-flex items-center justify-center w-10  bg-white rounded-full"
-
+                  rel="noopener noreferrer"
+                  aria-label="QTS on TikTok"
+                  className="inline-flex items-center text-white/80 hover:text-white transition"
                 >
-                  <Icon icon="logos:tiktok-icon" width="30" height="30" />
+                  <Icon icon="simple-icons:tiktok" width="30" height="30" />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar for Desktop */}
         {/* Bottom Bar for Desktop */}
         <div className="hidden md:block border-t border-white/10">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-2">

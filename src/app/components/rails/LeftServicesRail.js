@@ -89,12 +89,14 @@ const ITEMS = [
 ];
 
 /* =============== COMPONENT =============== */
+/* =============== COMPONENT =============== */
 export default function LeftServicesRail({ menuOpen }) {
   return (
     <div className="absolute left-0 top-1/2 -translate-y-1/2 z-30 mt-13">
       {/* Desktop panel */}
       <div className="bg-neutral-900/25 backdrop-blur-m rounded-r-sm rounded-l-none py-3 md:block">
-        <div className="flex flex-col">
+        {/* add space between items: small gap on mobile, a bit more on desktop */}
+        <div className="flex flex-col space-y-2 md:space-y-3">
           {ITEMS.map(({ title, Icon, href }) => (
             <Link
               key={title}
@@ -108,10 +110,9 @@ export default function LeftServicesRail({ menuOpen }) {
               "
             >
               {/* Icon */}
-          <span className="pl-2 pr-2 flex h-full items-center">
-  <Icon className="h-5 w-5 md:h-7 md:w-7 text-gray-200 group-hover:text-white" />
-</span>
-
+              <span className="pl-2 pr-2 flex h-full items-center">
+                <Icon className="h-5 w-5 md:h-7 md:w-7 text-gray-200 group-hover:text-white" />
+              </span>
 
               {/* Label: sm on mobile, lg on desktop */}
               <span
