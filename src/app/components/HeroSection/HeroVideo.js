@@ -63,34 +63,50 @@ export default function HeroVideo() {
       <LeftServicesRail />
       <RightContactRail phone="+971 56 806 8070" />
 
+      {/* gradient fade above ribbon */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
 
       {/* ✅ UPDATED: Seamless transparent ribbon with continuous slow scroll */}
       <div className="absolute inset-x-0 bottom-0 h-14 bg-black/70 overflow-hidden z-30 flex items-center">
-        {/* ✅ ADDED: Double text blocks for infinite seamless scroll */}
-        <div className="flex animate-marquee-slow whitespace-nowrap">
-          <span className="text-white text-lg font-semibold tracking-widest mr-10">
-            Dream it. Grow it. Dream it. Grow it. Dream it. Grow it. Dream it. Grow it.
-          </span>
-          <span className="text-white text-lg font-semibold tracking-widest mr-10">
-            Dream it. Grow it. Dream it. Grow it. Dream it. Grow it. Dream it. Grow it.
-          </span>
-        </div>
+        {/* ✅ ADDED: Triple text blocks for perfectly seamless infinite scroll */}
+      <div className="flex animate-marquee-super whitespace-nowrap">
+  {/* block 1 */}
+  <span className="text-white text-lg font-semibold tracking-widest inline-flex items-center">
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+  </span>
+
+  {/* block 2 */}
+  <span className="text-white text-lg font-semibold tracking-widest inline-flex items-center ml-16">
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+  </span>
+
+  {/* block 3 */}
+  <span className="text-white text-lg font-semibold tracking-widest inline-flex items-center ml-16">
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+    <span className="mr-16 flex-shrink-0">Dream it. Grow it. Build it.</span>
+  </span>
+</div>
+
       </div>
 
       {/* ✅ ADDED: Inline styles for seamless slow marquee animation */}
       <style jsx>{`
-        @keyframes marquee-slow {
+        @keyframes marquee-super {
           0% {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-33.33%);
           }
         }
 
-        .animate-marquee-slow {
-          animation: marquee-slow 40s linear infinite; /* super slow & smooth */
+        .animate-marquee-super {
+          animation: marquee-super 45s linear infinite; /* super slow, continuous */
           will-change: transform;
         }
       `}</style>
