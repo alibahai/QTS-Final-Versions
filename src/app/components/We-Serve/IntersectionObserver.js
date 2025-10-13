@@ -212,7 +212,8 @@ export default function SectorWeServe() {
           {/* Desktop full stats */}
           <div className="mt-10 hidden md:grid grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="pb-4 border-b border-gray-200">
-              <div className="text-3xl sm:text-4xl font-semibold text-gray-900">
+              {/* ✅ CHANGED: Increased text size from text-3xl sm:text-4xl to text-5xl sm:text-6xl */}
+              <div className="text-5xl sm:text-6xl font-bold text-gray-900">
                 {statValues[0]}
               </div>
               <div className="mt-1 text-sm font-medium text-gray-700">Years Of Experience</div>
@@ -221,7 +222,8 @@ export default function SectorWeServe() {
               </p>
             </div>
             <div className="pb-4 border-b border-gray-200">
-              <div className="text-3xl sm:text-4xl font-semibold text-gray-900">
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-5xl sm:text-6xl font-bold text-gray-900">
                 {statValues[1]}+
               </div>
               <div className="mt-1 text-sm font-medium text-gray-700">Projects Completed</div>
@@ -230,7 +232,8 @@ export default function SectorWeServe() {
               </p>
             </div>
             <div className="pb-4 border-b border-gray-200">
-              <div className="text-3xl sm:text-4xl font-semibold text-gray-900">
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-5xl sm:text-6xl font-bold text-gray-900">
                 {statValues[2]}+
               </div>
               <div className="mt-1 text-sm font-medium text-gray-700">Client Satisfaction</div>
@@ -239,7 +242,8 @@ export default function SectorWeServe() {
               </p>
             </div>
             <div className="pb-4 border-b border-gray-200">
-              <div className="text-3xl sm:text-4xl font-semibold text-gray-900">
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-5xl sm:text-6xl font-bold text-gray-900">
                 {statValues[3]}+
               </div>
               <div className="mt-1 text-sm font-medium text-gray-700">Expert Professionals</div>
@@ -252,19 +256,23 @@ export default function SectorWeServe() {
           {/* Mobile compact stats */}
           <div className="mt-10 grid grid-cols-4 gap-2 text-center md:hidden">
             <div>
-              <div className="text-2xl font-semibold text-gray-900">{statValues[0]}</div>
+              {/* ✅ CHANGED: Increased text size from text-2xl to text-4xl */}
+              <div className="text-4xl font-bold text-gray-900">{statValues[0]}</div>
               <div className="mt-0.5 text-xs font-medium text-gray-700">Years</div>
             </div>
             <div>
-              <div className="text-2xl font-semibold text-gray-900">{statValues[1]}+</div>
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-4xl font-bold text-gray-900">{statValues[1]}+</div>
               <div className="mt-0.5 text-xs font-medium text-gray-700">Projects</div>
             </div>
             <div>
-              <div className="text-2xl font-semibold text-gray-900">{statValues[2]}+</div>
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-4xl font-bold text-gray-900">{statValues[2]}+</div>
               <div className="mt-0.5 text-xs font-medium text-gray-700">Clients</div>
             </div>
             <div>
-              <div className="text-2xl font-semibold text-gray-900">{statValues[3]}+</div>
+              {/* ✅ CHANGED: Increased text size */}
+              <div className="text-4xl font-bold text-gray-900">{statValues[3]}+</div>
               <div className="mt-0.5 text-xs font-medium text-gray-700">Experts</div>
             </div>
           </div>

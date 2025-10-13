@@ -25,9 +25,7 @@ export default function HeroVideo() {
 
   useEffect(() => {
     if (ready && videoRef.current) {
-      // try to play once source is present
       const v = videoRef.current;
-      // small defer to let <source> attach
       const id = requestAnimationFrame(() => {
         v.play().catch(() => {});
       });
@@ -45,14 +43,13 @@ export default function HeroVideo() {
         ref={videoRef}
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"
         poster={POSTER_SRC}
-        preload="none" // 👉 don't prefetch
-        autoPlay // autoplay allowed (muted + playsInline)
+        preload="none"
+        autoPlay
         muted
         playsInline
         loop
         aria-hidden="true"
       >
-        {/* Source sirf tab add hoga jab pura page load ho chuka ho */}
         {ready && <source src={VIDEO_SRC} type="video/mp4" />}
       </video>
 
@@ -67,6 +64,36 @@ export default function HeroVideo() {
       <RightContactRail phone="+971 56 806 8070" />
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
+
+      {/* ✅ UPDATED: Seamless transparent ribbon with continuous slow scroll */}
+      <div className="absolute inset-x-0 bottom-0 h-14 bg-black/70 overflow-hidden z-30 flex items-center">
+        {/* ✅ ADDED: Double text blocks for infinite seamless scroll */}
+        <div className="flex animate-marquee-slow whitespace-nowrap">
+          <span className="text-white text-lg font-semibold tracking-widest mr-10">
+            Dream it. Grow it. Dream it. Grow it. Dream it. Grow it. Dream it. Grow it.
+          </span>
+          <span className="text-white text-lg font-semibold tracking-widest mr-10">
+            Dream it. Grow it. Dream it. Grow it. Dream it. Grow it. Dream it. Grow it.
+          </span>
+        </div>
+      </div>
+
+      {/* ✅ ADDED: Inline styles for seamless slow marquee animation */}
+      <style jsx>{`
+        @keyframes marquee-slow {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-marquee-slow {
+          animation: marquee-slow 40s linear infinite; /* super slow & smooth */
+          will-change: transform;
+        }
+      `}</style>
     </section>
   );
 }
