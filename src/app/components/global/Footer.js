@@ -205,7 +205,7 @@ export default function Footer({ year }) {
               <ul className="space-y-4 text-sm ml-12 text-white/80">
                 <li>
                   <Link
-                    href="/Servicess/Drawings-Approvals"
+                    href="/servicess/drawings-approvals"
                     className="hover:text-white"
                   >
                     Design Drawings &amp; Approvals
@@ -213,20 +213,20 @@ export default function Footer({ year }) {
                 </li>
                 <li>
                   <Link
-                    href="/Servicess/Demolishing"
+                    href="/servicess/demolishing"
                     className="hover:text-white"
                   >
                     Demolition, Build &amp; Refurbish
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Servicess/Mep" className="hover:text-white">
+                  <Link href="/servicess/mep" className="hover:text-white">
                     MEP Works
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/Servicess/Joinery-work"
+                    href="/servicess/joinery-work"
                     className="hover:text-white"
                   >
                     Joinery Works
@@ -234,7 +234,7 @@ export default function Footer({ year }) {
                 </li>
                 <li>
                   <Link
-                    href="/Servicess/Turnkey-Fit"
+                    href="/servicess/turnkey-fit"
                     className="hover:text-white"
                   >
                     Turnkey Fit-Outs
@@ -242,7 +242,7 @@ export default function Footer({ year }) {
                 </li>
                 <li>
                   <Link
-                    href="/Servicess/Design-Drawings"
+                    href="/servicess/design-drawings"
                     className="hover:text-white"
                   >
                     Design and Space Planning
@@ -262,23 +262,23 @@ export default function Footer({ year }) {
               <h3 className="mb-9 text-lg font-bold ml-12">Company</h3>
               <ul className="space-y-4 text-sm ml-12 text-white/80">
                 <li>
-                  <Link href="/About" className="hover:text-white">
+                  <Link href="/about" className="hover:text-white">
                     About QTS
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Servicess" className="hover:text-white">
+                  <Link href="/servicess" className="hover:text-white">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Contact" className="hover:text-white">
+                  <Link href="/contact" className="hover:text-white">
                     Contact Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/Our-Project/Arabian-Oud"
+                    href="/our-project/arabian-oud"
                     className="hover:text-white"
                   >
                     Our Projects
