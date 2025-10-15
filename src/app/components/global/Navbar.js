@@ -733,8 +733,8 @@ export default function Navbar({
                         : "max-h-0"
                     }`}
                   >
-                    <div className="grid grid-cols-1 gap-2">
-                      {COMMERCIAL_PROJECTS.map(({ title, Icon, href }, i) => (
+{/* ✅ Scrollable area only for Commercial projects */}
+    <div className="grid grid-cols-1 gap-2 max-h-56 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent">                      {COMMERCIAL_PROJECTS.map(({ title, Icon, href }, i) => (
                         <Link
                           key={i}
                           href={href}

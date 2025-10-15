@@ -67,7 +67,7 @@ export default function HeroVideo() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
 
       {/* ✅ UPDATED: Seamless transparent ribbon with continuous slow scroll */}
-      <div className="absolute inset-x-0 bottom-0 h-14 bg-black/70 overflow-hidden z-30 flex items-center">
+<div className="absolute inset-x-0 bottom-0 h-10 md:h-14 bg-black/70 overflow-hidden z-30 flex items-center">
         {/* ✅ ADDED: Triple text blocks for perfectly seamless infinite scroll */}
       <div className="flex animate-marquee-super whitespace-nowrap">
   {/* block 1 */}
