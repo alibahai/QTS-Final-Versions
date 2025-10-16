@@ -90,7 +90,7 @@ export default function SectorWeServe() {
   const active = services.find((s) => s.key === activeKey) || services[0];
 
   const statsRef = useRef(null);
-  const statTargets = [18, 500, 490, 50];
+  const statTargets = [7, 500, 490, 50];
   const statValues = useCountUp(statsRef, statTargets, 1400);
 
   return (
