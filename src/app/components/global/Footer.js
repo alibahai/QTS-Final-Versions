@@ -77,7 +77,7 @@ export default function Footer({ year }) {
             <p className="mt-6 text-sm leading-6 text-white/80">
               Quality Team Solution (QTS) is Dubai’s leading interior design and
               fit-out partner, known for turning ideas into exceptional spaces.
-              We deliver innovative, functional, and timeless designs — serving
+              We deliver  innovative, functional, and timeless designs — serving
               client across the UAE and beyond.
             </p>
 
