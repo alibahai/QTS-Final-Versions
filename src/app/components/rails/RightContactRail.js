@@ -54,7 +54,7 @@ export default function RightContactRail({
           </span>
 
           {/* EXACT same icon as footer */}
-          <Icon icon="logos:whatsapp-icon" width="20" height="20" className="mt-2" />
+          <Icon icon="logos:whatsapp-icon" width="20" height="20"   className="mt-2 rotate-0 md:rotate-270" />
         </a>
       </div>
 

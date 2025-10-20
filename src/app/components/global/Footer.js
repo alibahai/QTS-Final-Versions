@@ -85,8 +85,22 @@ export default function Footer({ year }) {
               Office 706, Business Bay Tower, Business Bay, Dubai, UAE
             </p>
 
-            <p className="mt-6 text-sm text-white/80">{PHONE_DISPLAY}</p>
-            <p className="mt-6 text-sm text-white/80">{EMAIL}</p>
+           <a
+  href={`tel:${PHONE_E164}`}
+  className="mt-6 block text-sm text-white/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded"
+  aria-label={`Call ${PHONE_DISPLAY}`}
+>
+  {PHONE_DISPLAY}
+</a>
+
+<a
+  href={`mailto:${EMAIL}`}
+  className="mt-3 block text-sm text-white/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded"
+  aria-label={`Email ${EMAIL}`}
+>
+  {EMAIL}
+</a>
+
 
             {/* Newsletter (hidden on mobile) */}
             <form
@@ -116,7 +130,7 @@ export default function Footer({ year }) {
             </form>
 
             {/* Social icons */}
-              <div className="flex items-center gap-10 pt-5 mt-10 mb-3  ml-28">
+              <div className="flex items-center gap-10 pt-5 mt-10 mb-3  ml-15">
                 <a
                   href="https://www.instagram.com/qualityteamsolution/"
                   target="_blank"

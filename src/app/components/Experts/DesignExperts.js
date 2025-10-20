@@ -133,7 +133,7 @@ export default function DesignExperts({
                             className={`text-lg font-semibold ${
                               isActive
                                 ? "text-[#F58321]"
-                                : "text-white group-hover:text-[#F58321] transition-colors"
+                                : "text-white hover:text-[#F58321] transition-colors"
                             }`}
                           >
                             {m.name}
