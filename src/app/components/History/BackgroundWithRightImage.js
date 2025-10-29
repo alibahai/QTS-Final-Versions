@@ -76,7 +76,7 @@ export default function BackgroundWithRightImage({
             </p>
 
             <a
-              href=""
+              href="/about"
               className="mt-6 inline-block text-sm font-semibold text-[#F58321] hover:text-orange-300"
             >
               Discover QTS →

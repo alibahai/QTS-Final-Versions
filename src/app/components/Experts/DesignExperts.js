@@ -114,7 +114,7 @@ export default function DesignExperts({
           </div>
 
           {/* ===== DESKTOP LAYOUT ===== */}
-          <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-1">
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Left: List */}
             <div className="lg:col-span-7 hidden lg:block">
               <ul>
@@ -124,12 +124,12 @@ export default function DesignExperts({
                     <li key={m.key} className="relative py-5 sm:py-6">
                       <button
                         type="button"
-                        onMouseEnter={() => setActiveKey(m.key)}
                         onFocus={() => setActiveKey(m.key)}
-                        className="group w-full text-left"
+                        className="group text-left"
                       >
                         <div className="flex items-center justify-between">
                           <span
+                            onMouseEnter={() => setActiveKey(m.key)}
                             className={`text-lg font-semibold ${
                               isActive
                                 ? "text-[#F58321]"
@@ -160,7 +160,7 @@ export default function DesignExperts({
 
             {/* Right: Active portrait (desktop) */}
             <div className="lg:col-span-5 lg:block hidden">
-              <div className="relative h-96 sm:h-[28rem] lg:h-[32rem] overflow-hidden mt-3 rounded-lg mr-auto">
+              <div className="relative h-96 sm:h-[28rem] lg:h-[32rem] overflow-hidden mt-3 rounded-lg">
                 <Image
                   key={active.image}
                   src={active.image}

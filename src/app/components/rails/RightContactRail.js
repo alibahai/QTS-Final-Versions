@@ -40,7 +40,7 @@ export default function RightContactRail({
       <div
         ref={railRef}
         className="hidden md:block fixed right-0 z-40"
-        style={{ top: "57%", transform: `translateY(calc(-50% - ${pushUp}px))` }}
+        style={{ top: "48%" }}
       >
         <a
           href={whatsappHref}

@@ -151,8 +151,10 @@ const COMMERCIAL_PROJECTS = [
   { title: "Deeny", href: "/our-project/deeny" },
   { title: "Jumeriah Road", href: "/our-project/jumeriah-road" },
   { title: "Maliha Road ", href: "/our-project/maliha-road " },
+    { title:"Senso", href: "/our-project/senso" },
   { title: "Senso City", href: "/our-project/senso-city" },
   { title: "Senso Outlet", href: "/our-project/senso-outlet" },
+  { title: "Select Market", href: "/our-project/select-market" },
 
 
 ];
